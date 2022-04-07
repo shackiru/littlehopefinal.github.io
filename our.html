@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="nav.css">
+      <link rel="stylesheet" href="our.css">
+      <link rel="stylesheet" href="footer.css">
+    </head>
+    <body>
+        <!-- Navigation bBar -->
+        <section id="navbar">
+            <div>
+            <img src="image/logo1.svg" class="nav-logo" style="top: 0px;">
+              <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
+              <label for="page-nav-toggle">
+                
+                <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+                  <g class="icon-group">
+                    <g class="icon--menu">
+                      <path d="M 6 0 L 54 0" />
+                      <path d="M 6 15 L 54 15" />
+                      <path d="M 6 30 L 54 30" />
+                    </g>
+                    <g class="icon--close">
+                      <path d="M 15 0 L 45 30" />
+                      <path d="M 15 30 L 45 0" />
+                    </g>
+                  </g>
+                </svg>
+              </label>
+              
+              <nav class="main-navigation">
+                <img src="image\logo-white.svg" class="nav-logo2">
+                <ul>
+                  <li><a class="effect-underline" href="index.html">Home</a></li>
+                  <li><a class="effect-underline" href="about.html">About</a></li>
+                  <li><a class="effect-underline" href="index.html#services">Services</a></li>
+                  <li><a class="effect-underline" href="our.html">Work</a></li>
+                  <li><a class="effect-underline" href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+          <!-- End Navigation -->
+          <!-- Banner Our Work -->
+          <section class="banner-area">
+              <div class="wrapper">
+                  <h2>Our <span>Work</span></h2>
+              </div>
+          </section>
+          <!-- End Banner -->
+          <!-- Swiper -->
+          <div class="container-swiper">
+
+            <div class="title-maiko"><h1>MAIKO</span></h1></div>
+    
+            <div id="slider" class="owl-carousel">
+                <div class="content-area">
+                    <div class="content">
+                        <div class="img-area"><img src="image/Feeds Maiko Funfact 1-min.jpg"></div>
+                    </div>
+                </div>
+    
+                <div class="content-area">
+                    <div class="content">
+                        <div class="img-area"><img src="image/Feeds Maiko Funfact 5-min.jpg" alt=""></div>
+                    </div>
+                </div>
+    
+                <div class="content-area">
+                    <div class="content">
+                        <div class="img-area"><img src="image/Feeds Maiko Funfact 2-min.jpg" alt=""></div>
+                    </div>
+                </div>
+    
+              </div>
+    
+            </div>
+            <div class="text">
+              <p>
+                Maiko Indonesia merupakan suatu perusahaan yang mengembangkan produk “Wood Pellet” atau media pembersih kotoran untuk peliharaan. Design yang dikerjakan kali ini memiliki target dimana design yang ditunjukan akan menciptakan komunikasi interaktif anatara Maiko dengan konsumennya.
+              </p>        
+            </div>
+        </div>
+        <!-- End Swiper -->
+        <!-- Contact -->
+        <section class="contact-footer" id="contact">
+            <div class="contact">
+                <div class="title">
+                    <h1>Contact</h1>
+                </div>
+                <nav class="navigation">
+                    <ul class="menu">
+                      <li class="li">
+                        <a href="#"><span>01</span><span>Insta </span> <span>\littlehopestudio</span></a>
+                      </li>
+                      <li class="li">
+                        <a href="#"><span>02</span><span>Behance </span> <span>\Little Hope</span></a>
+                      </li>
+                      <li class="li">
+                        <a href="#"><span>03</span><span>SoundCloud </span> <span>\Little Hope</span></a>
+                      </li>
+                      <li class="li">
+                        <a href="#"><span>04</span><span>Whatsapp </span> <span>\+62 811-867-500</span></a>
+                      </li>
+                    </ul>
+                  </nav>
+                <div class="content-footer">
+                    <div class="go-up">
+                      <a href="#navbar" style="text-decoration: none; color: #fff;">
+                        <img src="image/up.svg" alt="arrow up">
+                        <h3 style="font-size: 36px;">Go up</h3>
+                      </a>
+                    </div>              
+                </div>
+                <footer>
+                  <p>Copyright © 2021 Little Hope. All rights reserved.</p>
+              </footer>
+            </div>
+        </section>
+        <!-- End Contact -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+            $('#slider').owlCarousel({
+                loop:true,
+                margin:15,
+                nav:false,
+                autoplay: true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:3
+                    }
+                }
+            })
+        </script>
+          <!-- End Swiper -->
+    </body>
+</html>

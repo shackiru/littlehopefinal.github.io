@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:900&display=swap");
+*:root {
+  /* Background Color */
+  --main-background: #f9e8de;
+
+  /* Font Color */
+  --orange: #f49f58;
+  --blue: #444f8a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--main-background);
+}
+/* Banner */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.banner-area {
+  font-family: poppins;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  z-index: -1;
+}
+.banner-area h2 {
+  font-size: 72px;
+  color: var(--orange);
+  font-weight: bold;
+}
+.banner-area h2 span {
+  color: var(--blue);
+}
+.container {
+  max-width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title-maiko h1 {
+  text-align: center;
+  font-family: poppins;
+  font-style: normal;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: solid 2px;
+}
+/* End Banner */
+/* Swiper */
+#slider {
+  margin: 30px 10px 30px 0px;
+  z-index: -1;
+}
+
+.img-area {
+  width: 95%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  display: inline-block;
+}
+
+.content {
+  text-align: center;
+}
+
+.owl-dots {
+  text-align: center;
+}
+.text {
+  font-size: 1.5em;
+  border-top: solid 2px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@media screen and (max-width: 800px) {
+  .banner-area {
+    height: 50vh;
+  }
+  .banner-area h2 {
+    font-size: 48px;
+  }
+  .title-maiko h1 {
+    font-size: 33px;
+  }
+  .container {
+    height: 70vh;
+  }
+  .text {
+    font-size: 1em;
+  }
+}
+
+.owl-dot.active {
+  background-color: #212e60 !important;
+}
+/* End Swiper */
